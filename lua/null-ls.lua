@@ -20,11 +20,11 @@ end
 M.setup {
   services = {
     stylua = {
-      cmd = {"stylua", '%F'},
+      cmd = {"stylua", '{{filepath}}'},
       filetypes = {"lua"},
     },
     shfmt = {
-      cmd = {'shfmt', '-w', '-i', '2', '%F'},
+      cmd = {'shfmt', '-w', '-i', '2', '{{filepath}}'},
       filetypes = {"bash"},
     },
   },
